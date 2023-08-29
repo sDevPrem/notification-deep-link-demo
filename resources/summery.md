@@ -32,12 +32,12 @@ another app, email, or notification.
    specifying the deep link schemes, hostnames, and paths for the activity.
 
 2. **Notification Permission**: I have leverage the power of Kotlin extension function and property
-   check permission seamlessly.
+   to check permission seamlessly.
 
 ## Recommendations
 
 1. For deep linking, we can use Android's Navigation Component that makes handling of deep linking
-   easier and automatic navigates the user to the required destination.
+   easier and it automatically navigates the user to the required destination.
    Also, it promotes Single Activity architecture which ensures that the application will be
    light weight as Fragments are used mostly instead of Activities.
 2. For Notification Permission, we should show a rationale before asking for Notification
