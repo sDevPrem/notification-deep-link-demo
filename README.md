@@ -19,6 +19,9 @@ to [SecretActivity](app/src/main/java/com/sdevprem/notificationdeeplinkdemo/Secr
 3. Build it.
 4. Install it in an Android devices with Android version from 6 to 13.
 
+Download the debug apk
+from [here](https://drive.google.com/file/d/1SN6KUnC9-DwtjfMpeiuUciAQM7FsHqUo/view?usp=sharing).
+
 ## Steps for creating Notification and Deep link:
 
 Follow the steps in these files:
