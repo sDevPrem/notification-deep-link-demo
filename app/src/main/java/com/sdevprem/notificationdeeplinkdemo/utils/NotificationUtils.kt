@@ -7,11 +7,12 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.sdevprem.notificationdeeplinkdemo.MainActivity
 import com.sdevprem.notificationdeeplinkdemo.R
+import com.sdevprem.notificationdeeplinkdemo.SecretActivity
 
 object NotificationUtils {
     private const val NOTIFICATION_CHANNEL_ID = "notification_deep_link_channel_id"
@@ -31,9 +32,9 @@ object NotificationUtils {
 
     fun Context.sendNotification() {
         val notification = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
-            .setContentTitle("Demo notification Title")
+            .setContentTitle("Secret screen invitation")
             .setSmallIcon(R.drawable.ic_notification)
-            .setContentText("Click the action button to enter app")
+            .setContentText("Click the action button to enter Secret screen")
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .addAction(getEnterAppAction())
             .setAutoCancel(true)
@@ -55,11 +56,11 @@ object NotificationUtils {
     private fun Context.getEnterAppAction() =
         NotificationCompat.Action.Builder(
             R.drawable.ic_notification,
-            "Enter App",
+            "Enter secret screen",
             PendingIntent.getActivity(
                 this,
                 ENTER_APP_REQUEST_CODE,
-                Intent(this, MainActivity::class.java),
+                Intent(Intent.ACTION_VIEW, Uri.parse(SecretActivity.SECRET_SCREEN_DEEP_LINK1)),
                 PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
         )
