@@ -14,7 +14,7 @@ to [SecretActivity](app/src/main/java/com/sdevprem/notificationdeeplinkdemo/Secr
 
 ## Installation
 
-1. Clone this repository.
+1. Clone this repository and switch to mater branch(default).
 2. Open it in the android studio.
 3. Build it.
 4. Install it in an Android devices with Android version from 6 to 13.
@@ -29,6 +29,16 @@ Follow the steps in these files:
    notification integration.
 3. [summery.md]() : Contains progress, challenges and their solution and recommendation about
    this project.
+
+## Repository branches
+
+This repository contains three branches.
+
+1. [master](https://github.com/sDevPrem/notification-deep-link-demo): Main default branch.
+2. [notification_implementation](https://github.com/sDevPrem/notification-deep-link-demo/tree/notification_implementation):
+   Notification Implementation.
+3. [deep_link_implementation](https://github.com/sDevPrem/notification-deep-link-demo/tree/deep_link_implementation):
+   Deep link implementation with Notification.
 
 ## App Content
 
