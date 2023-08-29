@@ -27,8 +27,8 @@ Follow the steps in these files:
    showing Notification
 2. [deep_link_steps.md](resources/deep_link_steps.md) : Contains steps for creating deep link and
    notification integration.
-3. [summery.md]() : Contains progress, challenges and their solution and recommendation about
-   this project.
+3. [summery.md](resources/summery.md) : Contains progress, challenges and their solution and
+   recommendation about this project.
 
 ## Repository branches
 
